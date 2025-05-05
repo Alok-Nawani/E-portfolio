@@ -980,6 +980,44 @@ body.dark-mode .contact-button:hover {
 
 }
 
+@media (max-width: 768px) {
+  .profile-description ul {
+    margin-left: 1rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .profile-description ul li {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .profile-video {
+    justify-content: center; /* Center video instead of pushing it to the right */
+    margin-top: 1rem;
+  }
+
+  .profile-video video {
+    max-width: 100%; /* Full width on smaller screens */
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-description ul {
+    margin-left: 0.8rem;
+  }
+
+  .profile-description ul li {
+    font-size: 0.9rem;
+  }
+
+  .profile-video video {
+    border-radius: 6px;
+  }
+}
+
+
 /* Activities Section */
 .activities-container {
   padding: 1rem;
@@ -1383,4 +1421,54 @@ body.dark-mode .profile-item {
   background: linear-gradient(90deg, #38e8ff 0%, #4f8cff 100%);
   transform: translateY(-2px) scale(1.04);
   box-shadow: 0 4px 16px rgba(56, 232, 255, 0.18);
+}
+
+@media (max-width: 768px) {
+  .profile-item {
+    flex-direction: column; /* Stack description and video vertically */
+    align-items: center; /* Center the content */
+  }
+
+  .profile-description {
+    text-align: center; /* Center-align the description text */
+  }
+
+  .profile-video {
+    justify-content: center; /* Center the video */
+    margin-top: 1rem; /* Add spacing between description and video */
+    width: 100%; /* Ensure the video container takes full width */
+  }
+
+  .profile-video video {
+    max-width: 100%; /* Ensure the video fits within the screen */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better appearance */
+  }
+}
+
+.vimeo-video-container {
+  display: none; /* Initially hidden */
+  margin-top: 1rem; /* Add spacing between the button and video */
+  text-align: center; /* Center the video */
+  background: rgba(0, 0, 0, 0.8); /* Optional: Add a background for better visibility */
+  padding: 1rem; /* Add padding around the video */
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.vimeo-video-container iframe {
+  width: 100%; /* Make the video responsive */
+  max-width: 700px; /* Limit the maximum width */
+  height: 394px; /* Maintain 16:9 aspect ratio */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for better appearance */
+}
+
+.close-btn {
+  display: block;
+  text-align: right;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
 }

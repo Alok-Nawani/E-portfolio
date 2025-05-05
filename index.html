@@ -907,19 +907,15 @@
       <button onclick="document.getElementById('gdModal').style.display='block'" class="watch-full-btn">
         Watch Full GD
       </button>
-    </div>
     
-   <!-- Modal for Vimeo Video (place this just before </body>) -->
-<div id="gdModal" style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8);">
-  <span style="position:absolute;top:20px;right:40px;font-size:2rem;color:#fff;cursor:pointer;z-index:10001;" onclick="document.getElementById('gdModal').style.display='none'">&times;</span>
-  <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:10000;">
-    <iframe src="https://player.vimeo.com/video/1081241819?h=85f4b0e43c"
-      width="700" height="394" frameborder="0"
-      allow="autoplay; fullscreen; picture-in-picture"
-      allowfullscreen
-      title="final-thoughts-video"></iframe>
-  </div>
-</div>
+      <!-- Modal for Vimeo Video -->
+      <div id="gdModal" style="display:none;" class="vimeo-video-container">
+        <span class="close-btn" onclick="document.getElementById('gdModal').style.display='none'">&times;</span>
+        <iframe src="https://player.vimeo.com/video/1081241819?h=85f4b0e43c"
+          frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen title="final-thoughts-video"></iframe>
+      </div>
+    </div>
   </div>
 </div>
     </div>

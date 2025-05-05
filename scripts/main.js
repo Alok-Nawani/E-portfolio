@@ -179,6 +179,8 @@ function portfolioApp() {
   document.getElementById('dark-mode-toggle').addEventListener('click', function () {
   document.body.classList.toggle('dark-mode');
   });
+
+  
   
   const backToTopButton = document.getElementById('back-to-top');
   
