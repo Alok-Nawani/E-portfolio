@@ -1472,3 +1472,13 @@ body.dark-mode .profile-item {
   cursor: pointer;
   margin-bottom: 0.5rem;
 }
+
+.resume-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.resume-container .contact-button {
+    font-size: 1.1rem;
+    padding: 0.75rem 1.5rem;
+}
