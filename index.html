@@ -40,6 +40,8 @@
     <a id="downloadBtn" class="download-btn" href="#" download>Download</a> <!-- Download button -->
     <div id="caption"></div>
 </div>
+
+      
   
 
   <!-- Navigation -->
@@ -133,6 +135,16 @@
           </div>
         </div>
       </section>
+
+      <section x-show="current === 'resume'" x-transition>
+    <div class="resume-container" style="text-align: center; margin-top: 2rem;">
+        <a href="assets/resume.pdf" download class="contact-button" style="font-size: 1.1rem; padding: 0.75rem 1.5rem;">
+            <i class="fas fa-file-pdf"></i> Download Resume
+        </a>
+        <p style="margin-top: 0.5rem; color: #555;">Click the button to download my resume (PDF).</p>
+    </div>
+</section>
+
       
 
       <section x-show="current === 'skills'" x-transition>
